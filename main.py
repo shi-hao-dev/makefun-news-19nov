@@ -1,10 +1,12 @@
 # A news-image-daily entry (Python 3.13, standard library only): its image is the
 # entry.png beside this file, and the program copies it to /output/entry.png. The
-# image sums up Thursday 19 November 2026's world news: the first Trump-Xi-Putin
-# summit in Shenzhen, the ICJ's ruling on the Rohingya case, Ukraine's strike on
-# the Crimean Bridge, COP31's final stretch in Antalya, Anthropic's record IPO
-# and Cyclone Akvan. It is drawn once, from the day's reporting, and copied
-# unchanged, so two runs write the same bytes.
+# image is "THE WORLD IN ONE DAY", a 1024x1024 newsprint poster summing up
+# Thursday 19 November 2026 in 33 verified stories: a masthead and continent
+# stats bar (Asia 7, Europe 6, Africa 5, N. America 7, S. America 2, Oceania 2,
+# Middle East 3, Global 1), a world map with one numbered dot per story, 3 lead
+# stories, 12 secondary stories and an 18-item "The Day in Brief" timeline,
+# plus a date-check footer. It is drawn once, from the day's reporting
+# (draw_poster.py, PIL), and copied unchanged, so two runs write the same bytes.
 #
 # Before copying, the program checks the image is really there and really a PNG
 # (its 8-byte signature), so a missing or corrupted file fails loudly instead of
